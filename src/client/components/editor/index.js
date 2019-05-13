@@ -23,6 +23,8 @@ const MainMenu = require('../main-menu');
 const UndoRemove = require('./undo-remove');
 const { TaskView } = require('../tasks');
 
+const { TOUR_VIDEO_URL } = require('../../../config');
+
 const RM_DEBOUNCE_TIME = 500;
 const RM_AVAIL_DURATION = 5000;
 
@@ -456,7 +458,7 @@ class Editor extends DataComponent {
         }),
         h('div.editor-help-video-embed.video-embed', [
           h('iframe.video-embed-iframe', {
-            src: 'https://www.youtube.com/embed/Do5VaIcB4B8?rel=0',
+            src: TOUR_VIDEO_URL,
             frameBorder: 0,
             allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture',
             allowFullScreen: true

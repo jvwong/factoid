@@ -1,6 +1,8 @@
 const h = require('react-hyperscript');
 const { Component } = require('react');
 
+const { OVERVIEW_VIDEO_URL } = require('../../config');
+
 class Home extends Component {
   render(){
     return h('div.home', [
@@ -24,7 +26,7 @@ class Home extends Component {
         h('div.page-content', [
           h('div.video-embed', [
             h('iframe.video-embed-iframe', {
-              src: 'https://www.youtube.com/embed/HDW9AVYifxQ?rel=0',
+              src: OVERVIEW_VIDEO_URL,
               frameBorder: 0,
               allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture',
               allowFullScreen: true
@@ -36,7 +38,7 @@ class Home extends Component {
         h('div.page-content', [
           h('h2.section-title', 'For authors'),
           h('h2', 'Put your research where people can find it'),
-          h('p', 'Your paper contains text and figures crafted for readers which makes the knowledge within it difficult to access with a search engine or resuse directly. Factoid solves this problem by helping you create a digital summary of key interactions between genes. Researchers who access your interactions can easily link to your paper, making it more visible to the research community.')
+          h('p', 'Your paper contains text and figures crafted for readers which makes the knowledge within it difficult to access with a search engine or reuse directly. Factoid solves this problem by helping you create a digital summary of key interactions between genes. Researchers who access your interactions can easily link to your paper, making it more visible to the research community.')
         ])
       ]),
       h('section.home-section#why-publishers', [

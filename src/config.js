@@ -45,7 +45,11 @@ let defaults = {
   SMTP_PORT: 465,
   SMTP_HOST: 'localhost',
   SMTP_USER: 'user',
-  SMTP_PASSWORD: 'password'
+  SMTP_PASSWORD: 'password',
+
+  // Media
+  OVERVIEW_VIDEO_URL:'https://www.youtube.com/embed/HDW9AVYifxQ?rel=0',
+  TOUR_VIDEO_URL: 'https://www.youtube.com/embed/Do5VaIcB4B8?rel=0' 
 };
 
 let envVars = _.pick( process.env, Object.keys( defaults ) );
